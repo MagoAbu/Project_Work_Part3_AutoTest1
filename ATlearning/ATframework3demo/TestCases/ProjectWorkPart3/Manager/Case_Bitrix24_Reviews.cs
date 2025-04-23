@@ -19,7 +19,6 @@ namespace ATframework3demo.TestCases.ProjectWorkPart3.Manager
             //Создать сотрудника
             var firstUser = TestCase.RunningTestCase.CreatePortalTestUser(false);
 
-
             //Перейти в раздел левого меню "Задачи и проекты"
              homePage
                 .LeftMenu
