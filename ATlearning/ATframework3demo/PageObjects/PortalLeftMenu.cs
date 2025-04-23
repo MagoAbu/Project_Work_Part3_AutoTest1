@@ -1,5 +1,7 @@
 ﻿using atFrameWork2.SeleniumFramework;
 using ATframework3demo.PageObjects;
+using ATframework3demo.PageObjects.Reviews;
+using ATframework3demo.PageObjects.Tasks;
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
@@ -70,6 +72,14 @@ namespace atFrameWork2.PageObjects
             var btnNews = new WebItem("//li[@id='bx_left_menu_menu_live_feed']", "Пункт левого меню Новости");
             ClickMenuItem(btnNews);
             return new NewsPage(Driver);
+        }
+
+        public ReviewsBasePage OpenReviews()
+        {
+            //клик в пункт меню Отзывы
+            var btnReviews = new WebItem("//li[@id='bx_left_menu_2808350419']", "Пункт левого меню Отзывы");
+            ClickMenuItem(btnReviews);
+            return new ReviewsBasePage();
         }
     }
 }

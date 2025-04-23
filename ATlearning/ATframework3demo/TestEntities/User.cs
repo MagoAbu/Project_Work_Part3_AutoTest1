@@ -22,6 +22,7 @@ namespace atFrameWork2.TestEntities
         public string Name { get; set; }
         public string LastName { get; set; }
         public string NameLastName => Name + " " + LastName;
+        public string LastNameName => LastName + " " + Name;
 
         public string GetDBid(Uri portalUri, User adminUser)
         {
