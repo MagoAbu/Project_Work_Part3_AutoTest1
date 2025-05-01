@@ -35,7 +35,7 @@ namespace ATframework3demo.TestCases.ProjectWorkPart3.Manager
             homePage
                 .LeftMenu
                 .OpenReviews()
-                .GoToManagers()
+                .OpenManagers()
                 .CheckManagerIsAdded(firstUser.LastNameName);
         }
     }
