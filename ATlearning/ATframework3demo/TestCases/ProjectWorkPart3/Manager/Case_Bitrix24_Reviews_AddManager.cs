@@ -5,7 +5,7 @@ using atFrameWork2.TestEntities;
 
 namespace ATframework3demo.TestCases.ProjectWorkPart3.Manager
 {
-    public class Case_Bitrix24_Reviews : CaseCollectionBuilder
+    public class Case_Bitrix24_Reviews_AddManager : CaseCollectionBuilder
     {
         protected override List<TestCase> GetCases()
         {
@@ -24,7 +24,7 @@ namespace ATframework3demo.TestCases.ProjectWorkPart3.Manager
                 .LeftMenu
                 .OpenTasks()
             //Перейти в потоки
-                .GoToFlows()
+                .OpenFlows()
             //Отредактировать поток "Отзывы"
                 .OpenFlowControlMenu()
                 .SelectEditItem()
